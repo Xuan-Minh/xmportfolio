@@ -2,19 +2,21 @@ import "../../styles/global.css";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import LanguageSwitcher from "../../components/LanguageSwitcher";
-
-import { NextIntlProvider } from "next-intl";
+import ClientProvider from "../../components/ClientProvider";
 import messagesFr from "../../messages/fr.json";
 import messagesEn from "../../messages/en.json";
 
-export default function LocaleLayout({ children }) {
+export default function LocaleLayout({ children, params }) {
+  const messages = params.locale === "fr" ? messagesFr : messagesEn;
   return (
-    <html lang="fr">
+    <html lang={params.locale}>
       <body>
-        <Navbar />
-        <LanguageSwitcher />
-        {children}
-        <Footer />
+        <ClientProvider messages={messages} locale={params.locale}>
+          <Navbar />
+          <LanguageSwitcher />
+          {children}
+          <Footer />
+        </ClientProvider>
       </body>
     </html>
   );
