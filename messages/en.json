@@ -1,0 +1,14 @@
+{
+  "Home": {
+    "title": "Home",
+    "welcome": "Welcome to my portfolio!"
+  },
+  "Navbar": {
+    "gallery": "Gallery",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "Footer": {
+    "copyright": "© 2025 Xuan-Minh TRAN. All rights reserved."
+  }
+}
