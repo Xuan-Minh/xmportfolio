@@ -1,4 +1,4 @@
-import "../app/styles/globals.css";
+import "../../styles/global.css";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import LanguageSwitcher from "../../components/LanguageSwitcher";
