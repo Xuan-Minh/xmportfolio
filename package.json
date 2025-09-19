@@ -1,0 +1,27 @@
+{
+  "name": "xmportfolio",
+  "version": "1.0.0",
+  "description": "Bienvenue sur le dépôt du portfolio personnel de Xuan-Minh TRAN.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sanity/client": "^7.11.2",
+    "framer-motion": "^12.23.15",
+    "next": "^15.5.3",
+    "next-intl": "^4.3.9",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-hook-form": "^7.62.0",
+    "tailwindcss": "^4.1.13",
+    "yet-another-react-lightbox": "^3.25.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6"
+  }
+}
